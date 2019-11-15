@@ -6,6 +6,8 @@ import edu.wpi.first.wpilibj.*;
 
 public class Robot extends TimedRobot {
 
+  FlywheelControl fc = new FlywheelControl();
+
   @Override
   public void robotInit() {
 
@@ -22,11 +24,13 @@ public class Robot extends TimedRobot {
 
   @Override
   public void autonomousPeriodic() {
+    fc.update();
 
   }
 
   @Override
   public void teleopPeriodic() {
+
   }
 
   @Override
