@@ -24,7 +24,7 @@ public class FlywheelControl {
     private long currentTime;
 
     public void update() {
-        System.out.println(talon2.getSensorCollection().getQuadratureVelocity());
+        System.out.println(talon1.getSensorCollection().getQuadratureVelocity());
         error = desiredSpeed - talon1.getSensorCollection().getQuadratureVelocity();
         currentTime = System.currentTimeMillis();
 
@@ -39,5 +39,5 @@ public class FlywheelControl {
 
         lastError = error;
         lastTime = System.currentTimeMillis();
-    }
+    }+ 
 }
