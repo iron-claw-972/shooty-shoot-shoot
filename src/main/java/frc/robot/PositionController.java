@@ -47,7 +47,7 @@ public class PositionController {
     }
 
     private double motionProfile() {
-        
+        return 0;
     }
 
     private float getTimeSeconds() {
